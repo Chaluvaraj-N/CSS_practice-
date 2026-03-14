@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Font Size Units Example</title>
+
+<style>
+
+/* Default font */
+body{
+    font-family: Arial, sans-serif;
+}
+
+/* px - fixed size */
+.px-text{
+    font-size: 20px;
+    color: red;
+}
+
+/* % - relative to parent */
+.parent{
+    font-size: 20px;
+}
+
+.percent-text{
+    font-size: 120%;
+    color: blue;
+}
+
+/* em - relative to parent font size */
+.em-parent{
+    font-size: 20px;
+}
+
+.em-text{
+    font-size: 2em;
+    color: green;
+}
+
+/* rem - relative to root element */
+.rem-text{
+    font-size: 2rem;
+    color: purple;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h2 class="px-text">welcome to css class</h2>
+
+
+<!-- 120% of 20px = 24px -->
+<div class="parent">
+<p class="percent-text">dhee coding labs</p>
+</div>
+
+
+<!-- 2 × 20px = 40px -->
+<div class="em-parent">
+<p class="em-text">werty cvbnyg dfgh rtyujngfv ertyujhgf</p>
+</div>
+
+
+<!-- Default browser root font size: 16px (2rem = 32px) -->
+<p class="rem-text">asd vbrtdsfgh r5tyhujjrcv 5eyuhjbxcv rdyfujghuyv </p>
+
+</body>
+</html>
