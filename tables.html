@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Rowspan and Colspan Table</title>
+
+<style>
+
+body{
+    font-family: Verdana, sans-serif;
+    background: linear-gradient(to right,#e0f7fa,#e8f5e9);
+    text-align:center;
+}
+
+h2{
+    color:#1b5e20;
+}
+
+table{
+    border-collapse: collapse;
+    margin:30px auto;
+    width:65%;
+    background:#ffffff;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 4px 12px rgba(0,0,0,0.2);
+}
+
+th{
+    background:linear-gradient(to right,#43cea2,#185a9d);
+    color:white;
+    padding:14px;
+    font-size:16px;
+}
+
+td{
+    padding:12px;
+    border-bottom:1px solid #ddd;
+}
+
+tr:nth-child(even){
+    background:#f9f9f9;
+}
+
+tr:hover{
+    background:#dcedc8;
+    transition:0.3s;
+}
+
+td[colspan]{
+    background:#ff7043;
+    color:white;
+    font-weight:bold;
+    font-size:15px;
+}
+
+</style>
+</head>
+
+<body>
+
+<h2>Rowspan Table Example</h2>
+
+<table>
+
+<tr>
+<th>Name</th>
+<th>Department</th>
+<th>Year</th>
+</tr>
+
+<tr>
+<td rowspan="2">John Doe</td>
+<td>Computer Science</td>
+<td>2nd Year</td>
+</tr>
+
+<tr>
+<td>Mathematics</td>
+<td>3rd Year</td>
+</tr>
+
+<tr>
+<td rowspan="2">Jane Smith</td>
+<td>Physics</td>
+<td>1st Year</td>
+</tr>
+
+<tr>
+<td>Biology</td>
+<td>2nd Year</td>
+</tr>
+
+</table>
+
+<br><br>
+
+<h2>Rowspan and Colspan Example</h2>
+
+<table>
+
+<tr>
+<th>Name</th>
+<th colspan="2">Course Details</th>
+</tr>
+
+<tr>
+<td rowspan="2">John Doe</td>
+<td>Computer Science</td>
+<td>2nd Year</td>
+</tr>
+
+<tr>
+<td>Mathematics</td>
+<td>3rd Year</td>
+</tr>
+
+<tr>
+<td rowspan="2">Jane Smith</td>
+<td>Physics</td>
+<td>1st Year</td>
+</tr>
+
+<tr>
+<td>Biology</td>
+<td>2nd Year</td>
+</tr>
+
+<tr>
+<td colspan="3">Table Completed</td>
+</tr>
+
+</table>
+
+</body>
+</html>
