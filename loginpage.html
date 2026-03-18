@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>login page</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+     
+      background:
+        linear-gradient(135deg, rgba(59,130,246,0.6), rgba(168,85,247,0.6)),
+        url('https://picsum.photos/1600/900?blur=1') no-repeat center/cover;
+
+      color: white;
+    }
+
+    .login-box {
+      background: rgba(15, 23, 42, 0.75);
+      backdrop-filter: blur(10px);
+      padding: 30px;
+      width: 320px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 0 25px rgba(0,0,0,0.4);
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 6px;
+      background: rgba(30, 41, 59, 0.8);
+      color: white;
+    }
+
+    input::placeholder {
+      color: #cbd5f5;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      background: linear-gradient(45deg, #3b82f6, #8b5cf6);
+      color: white;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+
+    .forgot {
+      margin-top: 10px;
+      text-align: right;
+    }
+
+    .forgot a {
+      color: #e0e7ff;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .profiles {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .profiles img {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      margin: 0 5px;
+      border: 2px solid white;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="login-box">
+    <h2>Login</h2>
+
+    <input type="text" placeholder="Username">
+    <input type="password" placeholder="Password">
+
+    <div class="forgot">
+      <a href="#">Forgot Password?</a>
+    </div>
+
+    <button>Login</button>
+
+    <div class="profiles">
+      <img src="https://i.pravatar.cc/45?img=20">
+      <img src="https://i.pravatar.cc/45?img=25">
+      <img src="https://i.pravatar.cc/45?img=30">
+    </div>
+  </div>
+
+</body>
+</html>
