@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+
+        /* Flex Direction Examples */
+        .flex-row {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+        }
+
+        .flex-column {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        /* Justify Content Examples */
+        .justify-start {
+            display: flex;
+            justify-content: flex-start;
+            gap: 10px;
+        }
+
+        .justify-center {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .justify-between {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        .justify-around {
+            display: flex;
+            justify-content: space-around;
+            gap: 10px;
+        }
+
+        /* Align Items Examples */
+        .align-start {
+            display: flex;
+            align-items: flex-start;
+            height: 150px;
+            gap: 10px;
+        }
+
+        .align-center {
+            display: flex;
+            align-items: center;
+            height: 150px;
+            gap: 10px;
+        }
+
+        .align-end {
+            display: flex;
+            align-items: flex-end;
+            height: 150px;
+            gap: 10px;
+        }
+
+        /* Flex Wrap Examples */
+        .flex-wrap-yes {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .flex-wrap-no {
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 10px;
+        }
+
+        /* Common Styles */
+        .container {
+            border: 2px solid #007bff;
+            padding: 15px;
+            border-radius: 4px;
+            background-color: #f9f9f9;
+        }
+
+        .item {
+            background-color: #007bff;
+            color: white;
+            padding: 15px;
+            border-radius: 4px;
+            min-width: 100px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .label {
+            color: #666;
+            font-size: 14px;
+            margin-top: 5px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Flexbox Properties</h1>
+
+    <!-- Flex Container vs Items -->
+    <div class="section">
+        <h2>Flex Container vs Flex Items</h2>
+        <p><strong>Flex Container:</strong> Element with display: flex</p>
+        <p><strong>Flex Items:</strong> Direct children of flex container</p>
+        <div class="container flex-row">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+        </div>
+    </div>
+
+    <!-- Flex Direction -->
+    <div class="section">
+        <h2>Flex Direction</h2>
+        <p><strong>flex-direction: row</strong> (default - horizontal)</p>
+        <div class="container flex-row">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+
+        <p style="margin-top: 20px;"><strong>flex-direction: column</strong> (vertical)</p>
+        <div class="container flex-column">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+    </div>
+
+    <!-- Justify Content -->
+    <div class="section">
+        <h2>Justify Content (horizontal alignment)</h2>
+        <p><strong>flex-start:</strong></p>
+        <div class="container justify-start">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+
+        <p style="margin-top: 20px;"><strong>center:</strong></p>
+        <div class="container justify-center">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+
+        <p style="margin-top: 20px;"><strong>space-between:</strong></p>
+        <div class="container justify-between">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+
+        <p style="margin-top: 20px;"><strong>space-around:</strong></p>
+        <div class="container justify-around">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+    </div>
+
+    <!-- Align Items -->
+    <div class="section">
+        <h2>Align Items (vertical alignment)</h2>
+        <p><strong>align-items: flex-start:</strong></p>
+        <div class="container align-start">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+
+        <p style="margin-top: 20px;"><strong>align-items: center:</strong></p>
+        <div class="container align-center">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+
+        <p style="margin-top: 20px;"><strong>align-items: flex-end:</strong></p>
+        <div class="container align-end">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+    </div>
+
+    <!-- Flex Wrap -->
+    <div class="section">
+        <h2>Flex Wrap</h2>
+        <p><strong>flex-wrap: wrap</strong> (items wrap to next line)</p>
+        <div class="container flex-wrap-yes" style="width: 250px;">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+        </div>
+
+        <p style="margin-top: 20px;"><strong>flex-wrap: nowrap</strong> (default - no wrapping)</p>
+        <div class="container flex-wrap-no" style="width: 250px; overflow-x: auto;">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+        </div>
+    </div>
+
+    <!-- Gap Property -->
+    <div class="section">
+        <h2>Gap Property</h2>
+        <p><strong>gap: 10px</strong> (space between items)</p>
+        <div class="container flex-row" style="gap: 10px;">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+
+        <p style="margin-top: 20px;"><strong>gap: 30px</strong></p>
+        <div class="container flex-row" style="gap: 30px;">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+    </div>
+
+</body>
+</html>
