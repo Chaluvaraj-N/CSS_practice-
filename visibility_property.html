@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Visibility Example</title>
+
+<style>
+body{
+    font-family: Arial;
+    text-align: center;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+
+.box{
+    height: 150px;
+    width: 150px;
+}
+
+
+.box1{
+    background-color: wheat;
+    visibility: visible;
+}
+
+.box2{
+    background-color: yellow;
+    visibility: hidden;
+}
+
+.box3{
+    background-color: tan;
+}
+
+
+table{
+    margin: auto;
+    border-collapse: collapse;
+    width: 60%;
+}
+
+th, td{
+    padding: 10px;
+}
+
+
+#one{
+    visibility: collapse;
+}
+</style>
+
+</head>
+<body>
+
+<h2>Visibility Property </h2>
+
+<div class="container">
+    <div class="box box1">Visible</div>
+    <div class="box box2">Hidden</div>
+    <div class="box box3">Normal</div>
+</div>
+
+<h3>Table Example</h3>
+
+<table border="1">
+    <tr>
+        <th>Sl No</th>
+        <th>Name</th>
+        <th>Skill</th>
+    </tr>
+
+    <tr id="one">
+        <td>1</td>
+        <td>Raj</td>
+        <td>React</td>
+    </tr>
+
+    <tr>
+        <td>2</td>
+        <td>Riya</td>
+        <td>Angular</td>
+    </tr>
+</table>
+
+</body>
+</html>

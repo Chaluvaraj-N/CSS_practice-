@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Gallery</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial;
+    }
+
+    body {
+        padding: 20px;
+        background: #f4f4f4;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        grid-template-rows:
+            80px  
+            120px
+            120px
+            120px;
+
+        grid-template-areas:
+            "title title title"
+            "big   small1 small2"
+            "big   wide   wide"
+            "b1    b2     b3";
+
+        gap: 10px;
+        height: 500px;
+    }
+
+    .title  { grid-area: title; background: #636e72; color: white; }
+    .big    { grid-area: big; background: #74b9ff; }
+    .small1 { grid-area: small1; background: #55efc4; }
+    .small2 { grid-area: small2; background: #ffeaa7; }
+    .wide   { grid-area: wide; background: #fab1a0; }
+    .b1     { grid-area: b1; background: #a29bfe; }
+    .b2     { grid-area: b2; background: #81ecec; }
+    .b3     { grid-area: b3; background: #fd79a8; }
+
+ 
+    .gallery div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        border-radius: 6px;
+    }
+
+</style>
+</head>
+
+<body>
+
+<div class="gallery">
+    <div class="title">Image Gallery</div>
+
+    <div class="big">Big</div>
+    <div class="small1">1</div>
+    <div class="small2">2</div>
+
+    <div class="wide">Wide</div>
+
+    <div class="b1">3</div>
+    <div class="b2">4</div>
+    <div class="b3">5</div>
+</div>
+
+</body>
+</html>
