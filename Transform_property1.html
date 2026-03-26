@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 300px;
+            width: 300px;
+            background-color: blue;
+            margin: 150px auto;
+            transition: background-color 3s,transform 4s;
+        }
+        .box:hover{
+            background-color: red;
+            /* transform: translate(100px); */
+                /* transform: translateX(-300px); */
+        /* transform: translateY(300px); */
+            /* transform: rotate(360deg); */
+            /* transform: rotate(120deg); */
+              /* transform: rotateX(180deg); */
+                /* transform: rotateY(120deg); */
+                /* transform: scale(1.2); */
+                 /* transform: scaleX(1.7); */
+                   /* transform: scaleY(1.7); */
+        }
+           .box{
+            height: 300px;
+            width: 300px;
+           background-image: url('https://tse2.mm.bing.net/th/id/OIP.LZ9UrcRnGV3pCumqBzGdFAHaJQ?pid=Api&P=0&h=180');
+            margin: 150px auto;
+            background-position: center;
+            background-size: cover;
+          transition: background-image 4s,height 3s,width 5s,transform 6s;
+          transition-timing-function: ease-in-out;
+        }
+        .box:hover{
+  background-image: url('https://www.filmibeat.com/img/2013/09/30-shankar-nag-07.jpg');
+           height: 400px;
+           width: 400px;
+              /* transform: translate(100px); */
+                /* transform: translateX(-300px); */
+        /* transform: translateY(300px); */
+            transform: rotate(360deg);
+            /* transform: rotate(120deg); */
+              /* transform: rotateX(180deg); */
+                /* transform: rotateY(120deg); */
+                /* transform: scale(1.2); */
+                 /* transform: scaleX(1.7); */
+                   /* transform: scaleY(1.7); */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+  <center>
+    <button>Load more</button>
+  </center>  
+</body>
+</html>
