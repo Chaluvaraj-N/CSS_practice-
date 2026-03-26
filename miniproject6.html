@@ -19,22 +19,19 @@
     justify-content:space-between;
     align-items:center;
     background:#f36c6c;
-    padding:15px 40px;
+    padding:15px 60px;
 }
 
 .navbar ul{
     display:flex;
     list-style:none;
-    gap:40px;
+    gap:60px;
 }
 
 .navbar ul li{
     font-weight:bold;
+    letter-spacing:2px;
     cursor:pointer;
-}
-
-.menu{
-    font-size:24px;
 }
 
 /* HERO */
@@ -45,26 +42,31 @@
 
 .hero-left{
     width:50%;
-    padding:60px;
+    padding:80px;
     background:linear-gradient(to right,#f7e7a9,#f2b6b6);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
 }
 
 .hero-left h1{
-    font-size:50px;
-    letter-spacing:5px;
-    margin-bottom:20px;
+    font-size:55px;
+    letter-spacing:6px;
+    margin-bottom:30px;
 }
 
 .hero-left p{
-    line-height:1.6;
-    margin-bottom:30px;
+    line-height:1.8;
+    margin-bottom:40px;
 }
 
 .hero-left button{
     background:#f36c6c;
     color:white;
     border:none;
-    padding:12px 25px;
+    padding:15px 40px;
+    width:150px;
+    cursor:pointer;
 }
 
 /* RIGHT IMAGE */
@@ -81,16 +83,16 @@
 /* SECTION 2 */
 .section2{
     display:flex;
-    justify-content:space-around;
+    justify-content:space-between;
     align-items:center;
-    padding:60px;
+    padding:80px;
     background:linear-gradient(to right,#f7e7a9,#e3a1d4);
 }
 
-/* GRID IMAGES */
+/* IMAGES GRID */
 .images{
     display:grid;
-    grid-template-columns:1fr 1fr;
+    grid-template-columns:200px 200px;
     gap:20px;
 }
 
@@ -100,6 +102,7 @@
     object-fit:cover;
 }
 
+/* BIG IMAGE */
 .images .big{
     grid-row:span 2;
     height:420px;
@@ -109,18 +112,25 @@
 .card{
     background:#f36c6c;
     padding:40px;
-    width:350px;
+    width:400px;
 }
 
 .card h4{
     margin-bottom:10px;
+    letter-spacing:2px;
 }
 
 .card h1{
     margin:20px 0;
+    font-size:32px;
+    letter-spacing:3px;
 }
 
-.card p{
+/* CLICK + ARROW INLINE */
+.card .click{
+    display:flex;
+    align-items:center;
+    gap:10px;
     cursor:pointer;
 }
 </style>
@@ -138,7 +148,9 @@
         <li>Testimonials</li>
         <li>Contact Us</li>
     </ul>
-    <div class="menu">☰</div>
+    <div class="menu">
+        <img src="menu-bar.jpg" width="30">
+    </div>
 </div>
 
 <!-- HERO -->
@@ -148,35 +160,36 @@
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
             id est vitae dolor rhoncus tristique. Maecenas metus quam,
-            rhoncus euismod lorem in, sollicitudin viverra eros.
+            rhoncus euismod lorem in, sollicitudin viverra eros. Donec
+            dictum luctus quam ut tristique.
         </p>
         <button>Click Me</button>
     </div>
 
     <div class="hero-right">
-        <!-- BURGER IMAGE -->
-        <img src="https://images.unsplash.com/photo-1550547660-d9450f859349">
+        <img src="burger.jpg">
     </div>
 </div>
 
 <!-- SECTION 2 -->
 <div class="section2">
 
+    <!-- LEFT IMAGES -->
     <div class="images">
-        <!-- STAGE IMAGE -->
-        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836">
-
-        <!-- FOOD IMAGE (BIG) -->
-        <img src="https://images.unsplash.com/photo-1498654896293-37aacf113fd9" class="big">
-
-        <!-- STREET IMAGE -->
-        <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1">
+        <img src="stage.jpg">
+        <img src="table.jpg" class="big">
+        <img src="street.jpg">
     </div>
 
+    <!-- RIGHT CARD -->
     <div class="card">
         <h4>LOREM IPSUM</h4>
         <h1>LOREM IPSUM<br>SET ADEMIR</h1>
-        <p>Click ➜</p>
+
+        <div class="click">
+            <a href="#" style="text-decoration:none; color:black;">Click</a>
+            <img src="arrow.jpg" width="20">
+        </div>
     </div>
 
 </div>
