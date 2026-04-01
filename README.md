@@ -211,7 +211,7 @@ start "Mini Projects" "mini projects"
 
 ⭐ **Star if helpful! Found a bug? Open an issue!**
 
-![Hero](images/heroimg.jpg)
 
-**Updated by BLACKBOXAI**
+
+**Created by CHALUVA RAJ N**
 
