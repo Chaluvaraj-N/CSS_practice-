@@ -96,7 +96,7 @@ button {
 .color1 { color: red; }
 .color2 { color: rgb(255,0,0); }
 .color3 { color: rgba(255,0,0,0.5); }
-.color4 { color: #ff0000; }
+.color4 { color: #ff0000;  } 
 .color5 { color: hsl(0,100%,50%); }
 
 /* ================= BACKGROUND ================= */

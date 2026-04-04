@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E-Learn</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f5f7fb; 
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px; 
+}
+
+.logo img{
+    width:150px;
+}
+
+nav ul{
+    display:flex;
+    gap:30px;
+    list-style:none;
+}
+ul:hover{
+    transition: initial-scale(1.1);
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    color: red;
+    transition-behavior: calc(1.1);
+    
+}
+
+.nav-btns button{
+    padding:8px 16px;
+    border:none;
+    border-radius:6px;
+    margin-left:10px;
+    cursor:pointer;
+}
+
+.signup{
+    background:#4c6fff;
+    color:#fff;
+}
+
+
+.hero{
+    margin:20px auto;
+    width:90%;
+    border-radius:15px;
+    overflow:hidden;
+    display:flex;
+    align-items:center;
+    background:#000;
+    color:#fff;
+    position:relative;
+    animation: reverse;
+}
+
+.hero img{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+    opacity:0.6;
+}
+
+.hero-text{
+    position:absolute;
+    left:50px;
+    max-width:400px;
+}
+
+.search-box{
+    margin-top:20px;
+    display:flex;
+}
+
+.search-box input{
+    padding:10px;
+    border:none;
+    width:200px;
+}
+
+.search-box button{
+    background:#4c6fff;
+    color:#fff;
+    border:none;
+    padding:10px 15px;
+}
+
+
+.stats{
+    display:flex;
+    justify-content:space-around;
+    margin:40px 0;
+    text-align:center;
+}
+
+.stat img{
+    width:40px;
+    margin-bottom:10px;
+}
+
+
+.section{
+    width:90%;
+    margin:auto;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+
+.card{
+    background:#fff;
+    border-radius:10px;
+    overflow:hidden;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card img{
+    width:100%;
+    height:150px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:10px;
+}
+
+
+.blog{
+    width:90%;
+    margin:60px auto;
+}
+
+.blog-cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+
+.newsletter{
+    text-align:center;
+    margin:60px 0;
+    box-shadow: #777; 
+}
+
+.newsletter input{
+    padding:10px;
+    width:250px;
+}
+
+.newsletter button{
+    padding:10px 15px;
+    background:#4c6fff;
+    color:#fff;
+    border:none;
+    box-shadow: #777;
+}
+
+
+@keyframes fadeIn{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+
+
+@media(max-width:900px){
+    .cards,.blog-cards{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:600px){
+    nav{
+        flex-direction:column;
+        gap:10px;
+    }
+    .cards,.blog-cards{
+        grid-template-columns:1fr;
+    }
+}
+body{
+    font-family: Arial, sans-serif;
+    background:#f5f7fb;
+}
+
+
+.section{
+    width:90%;
+    margin:auto;
+    margin-top:40px;
+}
+
+.section-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.section-header h2{
+    font-size:22px;
+}
+
+.section-header button{
+    padding:8px 15px;
+    border:1px solid #4c6fff;
+    background:none;
+    color:#4c6fff;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+
+.card{
+    background:#fff;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 4px 12px rgba(0,0,0,0.05);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card-img{
+    position:relative;
+}
+
+.card-img img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+
+.price{
+    position:absolute;
+    bottom:10px;
+    right:10px;
+    background:#4c6fff;
+    color:#fff;
+    padding:5px 10px;
+    font-size:12px;
+    border-radius:6px;
+}
+
+
+.card-content{
+    padding:15px;
+}
+
+.card-content h4{
+    margin-bottom:8px;
+}
+
+
+.rating{
+    color:#f4c150;
+    font-size:14px;
+    margin-bottom:10px;
+}
+
+
+.info{
+    display:flex;
+    justify-content:space-between;
+    font-size:12px;
+    color:#777;
+}
+
+
+@media(max-width:900px){
+    .cards{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:600px){
+    .cards{
+        grid-template-columns:1fr;
+    }
+}
+
+
+body{
+    background:#f5f7fb;
+    font-family:Arial, sans-serif;
+}
+
+
+.blog-section{
+    width:90%;
+    margin:50px auto;
+    background:#e9edf5;
+    padding:40px;
+    border-radius:10px;
+}
+
+
+.blog-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+}
+
+.blog-header h2{
+    font-size:22px;
+}
+
+.arrows{
+    display:flex;
+    gap:10px;
+}
+
+.arrow{
+    width:55px;
+    height:35px;
+    background:#aab0ea;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:6px;
+    cursor:pointer;
+    animation-duration: 2s;
+    
+
+}
+
+
+.blog-cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.blog-card{
+    background:#fff;
+    border-radius:12px;
+    overflow:hidden;
+    transition:0.3s;
+}
+
+.blog-card:hover{
+    transform:translateY(-6px);
+}
+
+
+.blog-card img{
+    width:100%;
+    height:160px;
+    object-fit:cover;
+}
+
+
+.blog-content{
+    padding:15px;
+}
+
+.meta{
+    font-size:12px;
+    color:#888;
+    margin-bottom:10px;
+}
+
+.blog-content p{
+    font-size:14px;
+    margin-bottom:10px;
+}
+
+.read{
+    font-size:12px;
+    color:#4c6fff;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+
+@media(max-width:900px){
+    .blog-cards{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:600px){
+    .blog-cards{
+        grid-template-columns:1fr;
+    }
+}
+.line1{
+    background-color: #4c6fff;
+    width: 200px;
+    height: 3px;
+    position: absolute;
+    margin-top: 35px;
+}
+.line2{
+    background-color: #4c6fff;
+    width: 140px;
+    height: 3px;
+    position: absolute;
+    margin-top: 35px;
+}
+body{
+    background:#f5f7fb;
+    font-family:Arial, sans-serif;
+}
+
+
+.stats{
+    width:90%;
+    margin:50px auto;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    text-align:center;
+}
+
+.stat{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+
+.icon{
+    width:80px;
+    height:80px;
+    background:#eef3ff;
+    border-radius:90px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+
+.icon img{
+    width:30px;
+}
+
+
+.text h3{
+    font-size:20px;
+    font-weight:bold;
+}
+
+.text p{
+    font-size:13px;
+    color:#777;
+}
+
+@media(max-width:700px){
+    .stats{
+        flex-direction:column;
+        gap:20px;
+    }
+}
+
+
+</style>
+</head>
+
+<body>
+
+
+<nav>
+    <div class="logo">
+        <img src="logo.jpg" width="550px">
+    </div>
+
+    <ul>
+        <li><b>Home</b></li>
+        <li><b>About</b></li>
+        <li><b>Courses</b></li>
+        <li><b>Blog</b></li>
+        <li><b>Contact</b></li>
+    </ul>
+
+    <div class="nav-btns">
+        <button>Log in</button>
+        <button class="signup">Sign Up</button>
+    </div>
+</nav>
+
+
+<section class="hero">
+    <img src="boy nature.jpg" alt="">
+    <div class="hero-text">
+        <h1>Find Our Best Online Courses & Become the Master</h1>
+        <p>Lorem ipsum dolor sit amet</p>
+
+        <div class="search-box">
+            <input type="text" placeholder="Search your courses">
+            <button>Search</button>
+        </div>
+    </div>
+</section>
+
+
+<section class="stats">
+
+    <div class="stat">
+        <div class="icon">
+            <img src="badge.png" height="50px" width="150px"/>
+        </div>
+        <div class="text">
+            <h3>20,000+</h3>
+            <p>Special Courses</p>
+        </div>
+    </div>
+
+
+    <div class="stat">
+        <div class="icon">
+            <img src="grad.jpg" height="50px" width="700px"/>
+        </div>
+        <div class="text">
+            <h3>480,000+</h3>
+            <p>Enrolled Student</p>
+        </div>
+    </div>
+
+
+    <div class="stat">
+        <div class="icon">
+            <img src="reading.png" height="50px" width="150px"/>
+        </div>
+        <div class="text">
+            <h3>4,000+</h3>
+            <p>Expert Instructor</p>
+        </div>
+    </div>
+
+</section>
+ <br><br>
+
+<section class="section">
+
+    <div class="section-header">
+        <h2>Our Popular Courses</h2>
+        <div class="line1"></div>
+        <button>ALL COURSES</button>
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="card-img">
+                <img src="girl1.jpg">
+                <span class="price">$20</span>
+            </div>
+            <div class="card-content">
+                <h4>Application Development</h4>
+                <div class="rating">★★★★★ <span style="color:#777;">(5.0 Ratings)</span></div>
+                <div class="info">
+                    <span>👤 2446</span>
+                    <span>⏱ 12h 28m</span>
+                    <span>📚 Lectures</span>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="card">
+            <div class="card-img">
+                <img src="boy1.jpg">
+                <span class="price">$20</span>
+            </div>
+            <div class="card-content">
+                <h4>Cyber Security</h4>
+                <div class="rating">★★★★★ <span style="color:#777;">(5.0 Ratings)</span></div>
+                <div class="info">
+                    <span>👤 2446</span>
+                    <span>⏱ 12h 28m</span>
+                    <span>📚 Lectures</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-img">
+                <img src="girl2.jpg">
+                <span class="price">$20</span>
+            </div>
+            <div class="card-content">
+                <h4>Data Engineering</h4>
+                <div class="rating">★★★★★ <span style="color:#777;">(5.0 Ratings)</span></div>
+                <div class="info">
+                    <span>👤 2446</span>
+                    <span>⏱ 12h 28m</span>
+                    <span>📚 Lectures</span>
+                </div>
+            </div>
+        </div> 
+
+        <div class="card">
+            <div class="card-img">
+                <img src="writing.jpg">
+                <span class="price">$20</span>
+            </div>
+            <div class="card-content">
+                <h4>Full stack Development</h4>
+                <div class="rating">★★★★★ <span style="color:#777;">(5.0 Ratings)</span></div>
+                <div class="info">
+                    <span>👤 2446</span>
+                    <span>⏱ 12h 28m</span>
+                    <span>📚 Lectures</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-img">
+                <img src="laptop.jpg">
+                <span class="price">$20</span>
+            </div>
+            <div class="card-content">
+                <h4>Artificial Intelligence</h4>
+                <div class="rating">★★★★★ <span style="color:#777;">(5.0 Ratings)</span></div>
+                <div class="info">
+                    <span>👤 2446</span>
+                    <span>⏱ 12h 28m</span>
+                    <span>📚 Lectures</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-img">
+                <img src="girl3.jpg">
+                <span class="price">$20</span>
+            </div>
+            <div class="card-content">
+                <h4>DevOps Engineer</h4>
+                <div class="rating">★★★★★ <span style="color:#777;">(5.0 Ratings)</span></div>
+                <div class="info">
+                    <span>👤 2446</span>
+                    <span>⏱ 12h 28m</span>
+                    <span>📚 Lectures</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+ 
+<section class="blog-section">
+    <div class="blog-header">
+        <h2>Our Latest Blog</h2>
+        <div class="line2"></div>
+        <div class="arrows">
+            <div class="arrow">←</div>
+            <div class="arrow">→</div>
+        </div>
+    </div>
+
+    <div class="blog-cards">
+
+
+        <div class="blog-card">
+            <img src="writing.jpg">
+            <div class="blog-content">
+                <div class="meta">April 10, 2020 • 4 Comments</div>
+                <p>Mauris pretium est tellus nullam dignissim sit amet commodo</p>
+                <div class="read">READ MORE</div>
+            </div>
+        </div>
+
+        
+        <div class="blog-card">
+            <img src="laptop.jpg">
+            <div class="blog-content">
+                <div class="meta">April 10, 2020 • 4 Comments</div>
+                <p>Mauris pretium est tellus nullam dignissim sit amet commodo</p>
+                <div class="read">READ MORE</div>
+            </div>
+        </div>
+
+        
+        <div class="blog-card">
+            <img src="girl3.jpg">
+            <div class="blog-content">
+                <div class="meta">April 10, 2020 • 4 Comments</div>
+                <p>Mauris pretium est tellus nullam dignissim sit amet commodo</p>
+                <div class="read">READ MORE</div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<section class="newsletter">
+    <h2>Subscribe Newsletter</h2> <br>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab iste quia, illo dicta sapiente suscipit, <br>assumenda deserunt repellendus perspiciatis, doloremque cupiditate. Amet optio repellendus doloremque <br> inventore dolorum, qui quis nihil.</p>
+<br>
+    <input type="text" placeholder="Enter Your Email Address">
+    <button>Subscribe</button>
+</section>
+
+</body>
+</html>
