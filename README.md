@@ -3,7 +3,7 @@
 
 [![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://css3.com)
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://html5.com)
-[![GitHub stars](https://img.shields.io/badge/stars-⭐-orange)](https://github.com/) [![Updated](https://img.shields.io/badge/Updated-Nov%202024-blue)](https://github.com/)
+[![GitHub stars](https://img.shields.io/badge/stars-⭐-orange)](https://github.com/) 
 
 Welcome to **CSS Mastery Hub**! 🚀 Comprehensive **interactive demos** for CSS properties, selectors, layouts, and **mini projects**. Hands-on learning for all levels.
 
@@ -211,7 +211,7 @@ start "Mini Projects" "mini projects"
 
 ⭐ **Star if helpful! Found a bug? Open an issue!**
 
-![Hero](images/heroimg.jpg)
 
-**Updated by BLACKBOXAI**
+
+**Created by CHALUVA RAJ N**
 
